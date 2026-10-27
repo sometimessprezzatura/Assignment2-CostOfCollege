@@ -30,11 +30,11 @@ def cost_per_day(annual_cost):
 
 
 def cost_per_credit(annual_cost, credits):
-    per_credit = annual_cost / credits
+    per_credit = annual_cost / credits / SEMESTERS_PER_YEAR
     return per_credit
 
 def cost_per_class(annual_cost, credits):
-    per_class = cost_per_credit(annual_cost, credits) * CS1430_CREDITS
+    per_class = cost_per_credit(annual_cost, credits) * CS1430_CREDITS / CS1430_MEETINGS_PER_SEMESTER
     return per_class
 # ---- PROGRAM ----
 
