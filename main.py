@@ -56,8 +56,6 @@ def main():
 
         if choice == "Q":
             break
-        elif choice == "q":
-            break
         elif choice == "1":
             print("The cost of one semester of college is: $" + f"{cost_per_semester(TOTAL_COST):.2f}")
         elif choice == "2":
